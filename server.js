@@ -50,7 +50,7 @@ app.get('/killer',(req,res) => {
 
 app.get('/killer/:name',(req,res)=> {
     const {name} = req.params;
-    Person.findById(name).exec()
+    Killer.findById(name).exec()
         .then(data => data ? res.send(data) : res.status(404).send({message:'Killer not found'}))
         .catch(err => res.status(409).send(err))
 });
