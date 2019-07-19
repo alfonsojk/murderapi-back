@@ -1,12 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-<<<<<<< HEAD
-const {Person} = require ('./PersonModel')
-const PORT = 3000 
-=======
 const {Killer} = require ('./PersonModel')
 const PORT = process.env.PORT || 3000 
->>>>>>> 0690e4589483dd2495ce45de90a5a20b80413e8a
 const cors = require('cors');
 
 const app = express();
