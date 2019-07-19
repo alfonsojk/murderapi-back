@@ -43,7 +43,7 @@ app.post('/sendkiller',(req,res) => {
     
 // Read
 app.get('/killer',(req,res) => {
-    Person.find().exec()
+    Killer.find().exec()
         .then(data => res.send(data))
         .catch(err => res.status(409).send(err))
 });
@@ -58,7 +58,7 @@ app.get('/killer/:name',(req,res)=> {
 //Update
 app.put('/killer/name',(req,res) => {
     const {name} = req.params;
-    Person.findByIdAndUpdate(name,{$set:req.body},{new:true}).exec()
+    Killer.findByIdAndUpdate(name,{$set:req.body},{new:true}).exec()
         .then(data => res.send(data))
         .catch(err => res.status(409).send(err))
 });
