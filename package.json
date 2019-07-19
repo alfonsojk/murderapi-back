@@ -2,7 +2,7 @@
   "name": "models",
   "version": "1.0.0",
   "description": "este es el back de murderapi",
-  "main": "murderapi-back",
+  "main": "node server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -10,7 +10,7 @@
   "keywords": [
     "back",
     "murder",
-    "api"
+    "api\u001b[D\u001b[D\u001b["
   ],
   "author": "FERYALF",
   "license": "ISC",
