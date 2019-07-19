@@ -42,7 +42,7 @@ app.post('/sendkiller',(req,res) => {
  });
     
 // Read
-app.get('/killer',(req,res) => {
+app.get('/killers',(req,res) => {
     Killer.find().exec()
         .then(data => res.send(data))
         .catch(err => res.status(409).send(err))
