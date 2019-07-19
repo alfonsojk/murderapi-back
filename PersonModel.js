@@ -1,16 +1,16 @@
 
 const mongoose = require ('mongoose')
 
-const URL_MONGO = 'mongodb+srv://alfonsojk:sacksjk!1@alfonsojk-mdswh.mongodb.net/test?retryWrites=true&w=majority'
+const URL_MONGO = 'mongodb+srv://fdobzmtz03:ad57400418-@cluster0-bllim.mongodb.net/test?retryWrites=true&w=majority'
 
-mongoose.connect(URL_MONGO,{ useNewUrlParser: true },(err)=>{
+mongoose.connect(URL_MONGO,{useNewUrlParser: true },(err)=>{
     if (!err) console.log('Conexión exitosa');
 });
 
 
 const Schema = mongoose.Schema;
 
-const PersonSchema = new Schema({
+const KillerSchema = new Schema({
     name :String,
     alias:String,
     first_appearance:String,
@@ -25,6 +25,6 @@ const PersonSchema = new Schema({
 })
 
 
-const Person = mongoose.model('person',PersonSchema);
+const Killer = mongoose.model('killer',KillerSchema);
 
-module.exports = {Person}
+module.exports = {Killer}
