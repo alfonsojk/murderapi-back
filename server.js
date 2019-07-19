@@ -37,7 +37,7 @@ app.post('/sendkiller',(req,res) => {
     newKiller.save((err,killer)=>{
         err 
         ? res.status(409).send(err) 
-        : res.status(201).send(person)
+        : res.status(201).send(Killer)
     });
  });
     
