@@ -2,7 +2,7 @@
   "name": "models",
   "version": "1.0.0",
   "description": "este es el back de murderapi",
-  "main": "server.js",
+  "main": "murderapi-back",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
